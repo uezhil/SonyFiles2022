@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Form</title>
+  </head>
+
+  <body>
+    <form>
+      <h3>Register here!</h3>
+      <hr />
+      <br />
+      <label for="firstname">Name:</label>
+      <input
+        id="firstname"
+        type="text"
+        required
+        autofocus
+        placeholder="First Name"
+        maxlength="10"
+        list="hobby"
+      />
+      <br /><br />
+      <label for="txtemail">Email:</label>
+      <input id="txtmail" type="email" />
+      <br /><br />
+
+      <label for="txtel">Phone:</label>
+      <input id="txtel" type="tel" pattern="\d{10}" />
+      <br /><br />
+
+      <label for="txturl">Website:</label>
+      <input id="txturl" type="url" />
+      <br /><br />
+
+      <label for="txtrange">Rating:</label>
+      <input id="txtrange" type="range" min="0" max="10" value="2" step="2" />
+      <br /><br />
+
+      <label for="txtsearch">Search:</label>
+      <input id="txtsearch" type="search" />
+      <br /><br />
+
+      <label for="txtinterest">Hobby:</label>
+      <input id="txtinterest" type="text" list="hobby" />
+      <br /><br />
+
+      <datalist id="hobby">
+        <option value="Music"></option>
+        <option value="Arts"></option>
+        <option value="Sports"></option>
+        <option value="Movies"></option>
+      </datalist>
+
+      <input type="submit" id="btnsubmit" value="Save" />
+    </form>
+  </body>
+</html>
