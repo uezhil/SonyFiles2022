@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src="JsEventsFunc.js"></script>
+  </head>
+  <body>
+    <h2>Javascript Demo for selection events</h2>
+    First Name:
+    <input
+      type="text"
+      name="fname"
+      onselect="setSelection(this)"
+      onfocus="setFocus(this)"
+      onblur="setBlur(this)"
+    />
+    <br />
+    <br />
+
+    Last Name:
+    <input
+      type="text"
+      name="lname"
+      onselect="setSelection(this)"
+      onfocus="setFocus(this)"
+      onblur="setBlur(this)"
+    />
+
+    <br />
+    <br />
+    <hr />
+    <h3>Addition</h3>
+
+    <input type="number" name="num" id="n1" />
+    <br /><br />
+    <input type="number" name="num" id="n2" />
+
+    <br /><br />
+    <input type="button" value="Add" onclick="Sum()" /><br /><br />
+
+    <div id="result">The addition result is :</div>
+  </body>
+</html>
