@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script>
+      //literal
+      function checkexp1() {
+        var pincode = /\d{6,8}/;
+        var status = pincode.exec(prompt("Enter a pincode"));
+        if (status != null) {
+          alert("Pincode is valid");
+        } else {
+          alert("Pincode is invalid");
+        }
+      }
+
+      //RegEx
+
+      function checkexp2() {
+        var regex = new RegExp("^Good", "i");
+        var inp = regex.test(prompt("Enter string"));
+        if (inp == true) {
+          alert("Pattern matching..." + regex.source);
+        } else {
+          alert("NO match..");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="checkexp1()">Literal</button>
+    <button onclick="checkexp2()">RegExp</button>
+  </body>
+</html>
