@@ -1,0 +1,7 @@
+https://www.javascript.com/
+https://www.w3.org/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+https://web.dev/learn/css/
+https://css-tricks.com/
+https://html.com/
+https://learn.microsoft.com/en-us/cpp/mfc/html-basics?view=msvc-170
