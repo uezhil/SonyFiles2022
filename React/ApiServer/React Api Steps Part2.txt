@@ -1,0 +1,37 @@
+Steps React Api Part 2
+1.Middleware
+Api Folder created
+ChkApi.js - Request,Response,error
+Movieapi - getmovies - http methods - httpget- url - env-fetch api
+
+2.Client - components
+MovieDB - smart/parent
+MovieList -dumb/presentation
+
+3.MovieDb - 
+import - getmovies - moviesapi
+hooks - useState - 
+const [movies, setMovies] = useState([]);
+
+useEffect
+  useEffect(() => {
+    getMovies().then((_movies) => setMovies(_movies));
+  }, []);
+
+4.MovieList props from MoviesDB
+ -    <MovieList movies={movies} />
+-{props.movies.map((movie) => {
+            return (
+              <tr>
+                <td>{movie.title}</td>
+                <td>{movie.star}</td>
+                <td>{movie.genre}</td>
+              </tr>
+            );
+
+5.
+Routing - App.js - route path movies
+Nav.js - Link - moviesdb
+<Link class="nav-link" to="/moviesdb">
+                Movies from Api
+              </Link>

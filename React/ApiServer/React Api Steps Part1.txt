@@ -1,0 +1,26 @@
+Steps - Api Json Server - Part 1
+1.
+Installation
+npm i json-server
+npm i npm-run-all
+npm i cross-env
+
+2.
+Create server folder/src
+-Create 2/3 files
+-Create the db.json-load with fake db
+-jsonserver.js - server definition - github
+-fakedb.js -movie data
+-generateddb.js - create db.json - prestart:api- generate db
+
+3.
+ package.json
+prestart:api - generatedb.js
+start:api jsonserver.js
+start:dev env - url:portno react scripts
+
+start: run-p start:api start:dev 
+
+4.
+npm run start:api - db.json
+npm run start:api - start both client & server
