@@ -1,1 +1,4 @@
 https://youtu.be/dpw9EHDh2bM
+https://reactjs.org/docs/cdn-links.html
+https://reactjs.org/docs/add-react-to-a-website.html
+https://reactjs.org/redirect-to-codepen/hello-world
