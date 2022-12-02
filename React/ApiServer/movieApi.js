@@ -18,3 +18,29 @@ export function getMoviebySlug(slug) {
     })
     .catch(ErrorChk);
 }
+
+
+//add/edit
+export function saveMovie(movie){
+
+  return fetch(url+(movie.id || ""),{
+    method:movie.id? "PUT":"POST",//Post for creating new movie data/put for update
+    headers:{"content-type":"application/json"},
+    body:JSON.stringify({
+      ...movie,
+      //Parse actor id to a number
+      actorId:parseInt(movie.actorId,10),
+    }),
+    })
+    .then(ResponseChk)
+    .catch(ErrorChk);
+
+}
+
+export function deleteMovie(movieId) {
+  return fetch(url + movieId, {
+    method: "DELETE",
+  })
+    .then(ResponseChk)
+    .catch(ErrorChk);
+}
